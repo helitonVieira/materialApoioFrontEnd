@@ -1,0 +1,1462 @@
+##############################################################################################	
+FERRAMENTAS PARA ESTUDO
+
+https://replit.com/ (TREINAR JAVASCRIPT TYPESCRIPT E OUTRAS)
+https://www.w3schools.com/ (PAGINA PARA PESQUISA)
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript (PAGINA PARA PESQUISA COMPLEXAS)
+https://fontawesome.com/v4/icons/  (ICONES)
+
+##############################################################################################	
+VISUAL CODE 
+##############################################################################################
+Extensões para instalar 
+	Live Server = btnDireito "Open with live server"   para atualizar a pagina automatico quando salvar  
+	Auto Rename Tag = fechar as tags automatico
+	Dracula Official = tela ficar preta 
+	
+	
+************************************************
+ATALHOS
+PESQUISA
+	Ctrol + Shift +F (Pesquisa por palavra)
+	Como buscar classe =  Ctrl + P 
+
+IDENTAR O CODIGO = SHIFT + ALT + F 
+
+
+************************************************	
+COMENTARIOS 
+************************************************
+html          <!--comentario em html-->
+css          /*comentario em css*/
+javascript  //  OU /* */
+************************************************
+	
+##############################################################################################
+javascript - https://www.youtube.com/watch?v=FdePtO5JSd0&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=6
+##############################################################################################
+
+
+------------------------------------------------------------
+Achar erro no javaScript
+------------------------------------------------------------
+click botao direito no browser 
+inspecionar
+console
+
+************************************************	
+PLUGINS 
+************************************************
+CTROL + SHIFT + P  (PROCURAR E ATIVAR)
+
+	LIVE SERVE substituto do (wach in Chrome descontinuado)(ja manda as alterações direto para googleChrome)
+	node exec (abilita F8 para rodar o javaScript)
+************************************************
+ECMAScript - padronização do javascript(1.0 , 2.0 , 3.0, ES5, ES6, ES2016, ES2017, ES2018)
+
+Livros: Javascript O guia definitivo 
+        Javascript Guia do programador 
+		Guia de referencia da mozila: https://developer.mozilla.org/pt-BR/docs/Glossario/JavaScript
+		Guia de referencia da ECMA: https://262.ecma-international.org/6.0/index.html (5 e 6 edição é as mais populares)
+
+Programas a serem instalados 
+VisualCode
+googleChrome
+
+Node.js 
+	(pode ser definido como um ambiente de execução Javascript server-side.
+	Isso significa que com o Node.js é possível criar aplicações Javascript para rodar
+	como uma aplicação standalone em uma máquina, não dependendo de um browser para a
+	execução, como estamos acostumados.)
+	
+Entrar no Node dentro VSCode 
+	terminal > new terminal 
+	digita (node) para acessar o node.Js
+Sair comando (exit)
+	
+	
+Alertas
+************************************************
+window.confirm('Está gostando de javaScript')
+window.prompt('Qual é o seu nome?)
+window.alert('Seja bem vindo, ' + nome + '!')
+document.write(`Seja bem vindo,  ${nome} !`) // manda para o body direto
+************************************************	
+VARIAVEIS  
+	var = não usar pois msm declarado dentro da funçao ele pode ser referenciado fora
+	let = msm que o var quando vai ter atribuição de valore
+	const = não pode ser alterado 
+************************************************
+*Dicas case sensitivel 
+*Variaves não é definida vc pode declarar como var n1 = 3 e depois atribuir n1 = 'Maria' 
+*Numeros 3   3.65 
+*String '' ou "" ou ``
+*Boolean false true 
+
+var n1 = 3 
+var s1 = 'variavel 1'
+var s2 = ´variavel 2´
+var	s3 = "variavel 3"
+
+typeof n1 (para saber o tipo que a variavel se encontra)
+
+
+let n1 = 3 (funciona como o var pode ser alterado o valor)
+const n1 = 3 (uma vez declarada  não altera o valor pois é uma constante)
+
+
+************************************************	
+Concatenar +  
+************************************************
+*Se for string ele concatena se for inteiro ou float
+    var nome =  'Heliton'
+    window.alert('Seja bem vindo, ' + nome + '!')	
+    window.alert(`Seja bem vindo,  ${nome} !`)	
+	
+************************************************	
+Conversao converter
+************************************************
+Number(x)//mais atual 
+Number.parseInt(x)
+Number.parseFloat(x)
+String(x) ou x.toString 
+
+************************************************	
+String 
+************************************************
+var s = 'heliton silva vieira'
+s.length         // pegar tamanho da string
+s.indexOf('silva') // retorna index 9 o inicio da primeira palavra silva encontrada
+s.lastIndexOf('silva') // retorna index do ultimo silva 
+s.slice(7,12) // remover esta parte
+s.replace('silva','gomes')
+s.trim() // remover espaço
+s.split(", ") // separa os espaços com ,
+
+s.toUpperCase() // passar para maiusculo
+s.toLowerCase() // passar para minusculo
+
+
+************************************************	
+Numeros Decimais 
+************************************************
+var x = 154.5
+x.toFixed(2) // passar para 2 casas decimais 
+x.toFixed(2).replace('.',',') // passa para virgula no lugar do ponto
+x.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})// 'USD' dolar   'EUR' euro  valores monetario por pais 
+isNaN(x) = true ou false verifica se é um numero
+
+************************************************	
+Operadores
+************************************************
+ Aritimeticos (precedentes primeiro * / depois +-)
+        5 + 2  = 7
+        5 - 2  = 3
+        5 * 2  = 10
+        5 / 2  = 2.5
+        5 % 2  = 1  resto da divisao famoso (mod)
+        5 ** 2  = 25 ao quadrado     
+        
+Relacionais 
+        > 
+        < 
+        >= 
+        <= 
+        == igual           5 = '5'    true
+        != diferente       5 != '5'    false
+        === retrito        5 === '5'    false  (verifica se valor e o type é igual)
+        !== restrito       5 !== "5"    true  
+ 
+logicos (ordenados por precedentes ! depois && depois ||) 
+        ! nao              !true = false
+        && conjunção       e
+        || disjunção       ou                                                                                                                                                   
+        		
+ternario (se true recebe o primeiro se false recebe a segunda opção)
+		?      5 = 5 ? 'verdadeiro': 'falso'
+			   5 = 5 ? 10 : 20
+			   
+Estrutura de repetição
+
+for (let i = 0; i < lista.length; i++) {
+    break   //para o for 
+    continue // volta para o topo do index pulando o index que esta
+}
+
+while (let i >= 10) {
+   i++;    
+}
+
+************************************************	
+Condições  
+************************************************
+
+if(condição){
+}else if{
+}else {
+}
+
+ex: var velocidade = 54
+console.log(`A velocidade ${velocidade}`)
+if(velocidade > 60){
+    console.	(`A velocidade esta acima do permitido`)
+}else {
+    console.log(`utilize o cinto de seguranca`)
+}
+
+
+var agora = new Date() // data completa com dia hora e pais 
+var diaSemana = agora.getDay() // pega dia da semana
+console.log(diaSemana  + '  ' + agora)
+/*
+0 = domingo
+1 = segunda
+2 = terça
+3 = quarta
+4 = quinta
+5 = sexta
+6  = sabado 
+*/
+
+switch é usado quando valores é fixo 
+
+switch (diaSemana) {
+    case 0:
+        console.log('domingo')
+        break
+    case 1:
+        console.log('segunda')
+        break
+    case 2:
+        console.log('terça')
+        break
+    case 3:
+        console.log('quarta')
+        break
+    case 4:
+        console.log('quinta')
+        break
+    case 5:
+        console.log('sexta')
+        break
+    case 6:
+        console.log('sabado')
+        break
+    default:
+        console.log('Dia invalido!')   
+}
+
+************************************************	
+extrutura de repetição  (while, do, for)
+************************************************
+
+var x = 1
+while (x <= 10) { // verifica a condição depois acontece 
+    console.log(x)
+ x++    
+} 
+
+do{ // acontece primeiro depois verifica a condição
+        console.log('a = ' + x)
+        a++
+    }while (a < 3 )
+
+
+for(inicio;teste;incremento){
+}	
+
+for (var index = 0; index <= 3 ; index++) {
+        console.log('a for = ' + index)        
+    }	
+
+for (var index = 0; index < array.length; index++) {
+        const element = array[index];        
+    }	
+	
+
+
+************************************************	
+Array Vetor 
+************************************************
+let pontuacao = [] // declaração
+pontuacao.sort() // ordenar 
+
+ADICIONAR 
+  pontuacao.push('Amarok')  //adicionar valor utimo elemento array
+  pontuacao.unshift('teste') // adiciona no primeiro elemento do array
+  pontuação.splice(2,0,'gugu')//adiciona gugu entre a posiçao 2 e 3
+REMOVER  
+  pontuacao.pop() // remove utimo elemento do array .shift remove o primeiro
+  pontuacao.shift() //remove primeiro elemento do array 
+  pontuação.splice(4,1) // remove a posição 4
+  
+
+pontuacao.length // pegar o tamanho array
+pontuacao.length -1 // pegar utima posiçao do array
+pontuacao[0] // pega a posição zero 
+pontuacao.indexOf('Amarok') // traz a posição no index se nao existir traz -1 
+pontuacao.indexOf(4) // Elemento da posição 4
+
+pontuacao.join(",") // todo array vira uma string só separada por virgula
+pontuacao.reverse() // inverte o array da ultima para primeira 
+
+for (const x in pontuacao) {
+   console.log(`pontuação é: ${pontuacao[x]}`)  
+}
+
+_______________CRIAÇÃO DE OBJETOS_____________
+
+let pessoa = {
+  nome: "Matheus",
+  idade: 29,
+  falar: function() {
+    console.log("Olá, tudo bem?");
+  },
+  soma: function(a, b) {
+    return a + b;
+  }
+};
+
+console.log(pessoa.nome);
+
+pessoa.falar();
+
+var soma = pessoa.soma(2, 2);
+
+console.log(soma);
+
+
+-----------------------------
+let pontuacao = [5,9,2,3]
+console.log(`${pontuacao}`)
+pontuacao.sort() // ordena do menor para maior
+console.log(pontuacao.length) // pega o tamanho do array
+for (const key in pontuacao) {
+   console.log(`pontuação é: ${pontuacao[key]}`)  
+}
+
+
+let carro = []
+console.log(`${carro}`)
+carro.push('Amarok')  //adicionar sem precisar ser na hora da declaração 
+carro.push('Marea')
+carro.push('Brasilia')
+carro.sort() //ordena por ordem alfabetica
+console.log('Posição no index: '+ carro.indexOf('Brasilia'))
+console.log('Posição no index: '+ carro.indexOf('Marea'))
+console.log('Posição no index: '+ carro.indexOf('Amarook')) // traz -1 quando nao encontra
+   carro.forEach(element => {
+      console.log(element)
+   });
+   
+   
+   let moto = ['ybr','Titan','R1100']
+   console.log(`${moto}`)
+   for (let index = 0; index < moto.length; index++) {
+      const element = moto[index];
+      console.log('minhas motos é: '+ element)      
+   }
+
+ ----------------------------------------	
+
+ 			   
+*****************************************************************************	
+PROMISE  =  executar duas parte do script de formas simultanea 
+*****************************************************************************	
+
+SEM A PROMISE                                COM A PROMISE  (todo processo da Promise é uma funçao que passa resultado para o resolve se true e reject se false)
+
+	function sumNumber(){                                 	let p = new Promise( resolve, reject ) =>{			  
+		let result = 1 + 1					let result = 1 + 1	
+		
+		if(result == 2){                          		if (result == 2){
+			sucessCallback()                  			resolve 'Sucess'
+		} else {                                  		}else{
+			errorCallback()                   			reject 'failed'
+		}		                          		}
+	}							})                
+									//chamada de uma promise
+	function sucessCallback(){                              p.then((message) => {    //.then recebe o resolve
+		console.log("soma é 2")                         	console.log("soma é"+ message)
+	}                                                       }).catch((err) =>{        //.catch recebe o reject 
+									console.log('erro ao chamar' + err)
+	function erroCallback(){				})
+		console.log("erro ao somar")
+	}
+	
+			   
+			   
+			   
+************************************************	
+DOM  =  Document Object Model
+************************************************
+DOM é um facilitador do HTML5 para mandar os elementos para o javaScript 
+
+*Dom roda no seu browser e nao no javaScript
+arvore DOM do site 
+
+            ____________ window (janela)____________
+			|		         |                      |
+	location (url)       document       history(onde veio onde vai)				
+                             |
+                 ___________HTML___________
+                 |                         |
+				head                      body 
+              |      |                 |   |   |    |
+            meta   title              h1   p   p   div
+                                               | 
+                                             strong
+
+
+ex:
+
+
+    <script>
+    	//aplicando o DOM no JS 
+    	//window.document.(neste ponto e informado a estrutura da arvore criada)
+    	window.document.write("Olá mundo!")
+    	window.document.write(window.document.charset)
+    	window.document.write(window.document.URL)
+    </script>
+
+      
+HTML PARA O JAVASCRIPT
+OS DOM  pode ser acessado:
+1) POR MARCA ou TAG  window.document.getElementsByTagName('p')[1])  
+2) POR ID  (window.document.getElementById('msg')) 
+3) POR NAME  (window.document.getElementsByName('msgName')[0])
+4) POR CLASSE  (window.document.getElementsByClassName('p')[1])
+5) POR SELETOR
+
+<body class = "msgClass">
+    <h1>Iniciando com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id="msg" name="msgName">clic em mim</div>
+</body>
+
+	//*toda div e representada por #
+	//*toda class representada por . 
+	<script>
+		var d =  window.document.querySelector('div#msg') // # para div
+		d.style.background = 'blue'
+   
+		var d =  window.document.querySelector('body.msgClass') // # para div
+		d.style.background = 'red'
+	 
+	</script> 
+	
+	
+------------------------------------------------------------
+colocando uma lista de array no html utilizando o dom
+------------------------------------------------------------
+
+var lista = ['laranja','maça','pera',  'jaca','limão'];
+//console.log(lista);
+var listaUl = document.createElement('ul'); //criando ul
+
+var body = document.getElementsByTagName('body'); //pegar todos elementos do body
+//console.log(body[0]);
+body[0].appendChild(listaUl); //add ul no body
+
+var listaNoBody = document.getElementsByTagName('ul');
+
+console.log(listaNoBody[0]);
+
+for (let i = 0; i < lista.length; i++) {
+   var liFor = document.createElement('li'); //criando elemento li
+   var textoLi = document.createTextNode(lista[i]); //pegando os elementos do array
+   liFor.appendChild(textoLi); //colocando elementos do array no li
+   listaNoBody[0].appendChild(liFor); //colocando os elementos do li no ul
+   console.log(lista[i]);
+
+    
+}
+	
+------------------------------------------------------------
+EVENTOS DO DOM 	 https://developer.mozilla.org/pt-BR/docs/Web/Events
+------------------------------------------------------------
+BLOCO determinado pelas {}
+function acao{}
+
+1) pelo html     
+	<div id="area" onclick="clicar()" onmouseenter= "entrar()" onmouseout= "sair()"> 
+
+2) pelo javascript
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseenter',entrar)
+    a.addEventListener('mouseout',sair)
+
+3) criação da função no javascript
+
+    function clicar() {        
+        a.innerText = 'Clicou!'
+        a.style.background = 'black'
+    }
+
+4) exemplo completo 
+
+<body>
+    <div id="area" >
+            <!-- chamada do evento pelo html <div id="area" onclick="clicar()" onmouseenter= "entrar()" onmouseout= "sair()"> -->
+        Interaja....
+    </div>
+</body>
+
+<script>
+    var a = document.getElementById('area')
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseenter',entrar)
+    a.addEventListener('mouseout',sair)
+
+    function clicar() {        
+        a.innerText = 'Clicou!'
+        a.style.background = 'black'
+    }
+
+    function entrar() {        
+        a.innerText = 'entrou!'
+        a.style.background = 'pink'
+    }
+   
+    function sair() {        
+        a.innerText = 'saiu!'
+        a.style.background = 'green'
+    }
+</script>
+
+</html>
+------------------------------------------------------------
+Soma entre 2 valores com input
+------------------------------------------------------------
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id='res'>Resultado</div>
+</body>
+
+<script>
+    var n1 = document.getElementById('txtn1')
+    var n2 = document.querySelector('input#txtn2')
+    var total
+    function somar(){
+        total = Number(n1.value) + Number(n2.value) 
+        //document.write(`Total da soma é:  ${total} `)
+         res.innerHTML = `Total da soma é: <strong> ${total} </strong> `
+    }
+</script>
+
+ 
+ ******************************************************************
+Fotos videos imagens  no google digita  pexels encontrarar monte 
+******************************************************************
+
+png = melhor para web 
+
+------------------------------------------------------------------
+chamado redirecionar outra tela pagina.html passando variavel javascript
+------------------------------------------------------------------
+
+PARAMETRO E FORMADO COM ?nome=valor mais de 1 com &
+     https://www.google.com?nome=heliton&sobrenome=vieira     
+ 
+PASSANDO
+ Se não der o 1 tenta o 2
+   1)window.location.href = "http://seusite.com"
+   2)window.open("./jogo.html?level="+level) ;    (Abre uma nova janela)
+
+ RECEBENDO 
+   const urlParametro = new URLSearchParams(window.location.search);
+   let level = urlParametro.get("level");
+   let jogo = setInterval(iniciarJogo, Number(level));
+
+
+##############################################################################################
+TypeScript  typescript 
+##############################################################################################
+terminal compilar o arquivo 
+	tsc aula1.ts  
+
+* Define a tipagem statica dentro do javaScript
+* Sintase e a mesma do javaScript
+
+declaração de variavel
+	//String
+		let nome : string
+		nome = 'gugu'
+	
+	//Number
+		let total : number  //(int, float, hex, binary)
+		total = 0xff0 
+	
+	// array 
+		let items: string[]
+		items = ['copo', 'mesa']
+	
+	//outra forma de declarar array
+		let values : Array<number>
+		values = [1,2,3]
+	
+	// tuple  (é um array onde ja sabe qual tipo de item vai conter)
+		let title : [number, string]
+		title = [1, 'Dono do Mundo']
+		
+	// enum (enumerado para criar conjunto de chave)
+		enum colors{
+			while = '#fff',
+			black = '#000'
+		}
+		
+	//any (qualque coisa mesmo que não tipar)
+		let coisa : any 
+		coisa = 1
+		coisa = true 
+		coisa = 'Maria'
+		
+	//void (vazio sem retorno)
+		funcition ler(): void{
+			console.log('funcao void')
+		}
+		
+	//null e undefined  (os dois sao iguais nulos)
+		type nome = string | undefined
+		
+	//never (nunca vai retornar so vai jogar na tela)		
+		function error(): never{
+			trow new Error("erro");
+		}
+		
+	//object (qualquer coisa que nao seja primitivo String number etc...)
+		let cart : object
+		cart = {
+			key : "chave"
+		}
+		
+//Map (chave e valor) 
+		let nomeIdade = new Map<string , number>();
+		nomeIdade.set('Heliton',37);
+		nomeIdade.set('Gugu',12);
+		nomeIdade.set('Gugu',36); //chave unica se tiver outra com msm nome ele faz a troca pela ultima chamada
+		console.log(nomeIdade)  // resulta chave valor  =  Map {'Heliton' => 37 , 'Gugu' => 36'}
+		
+	1)DECLARAR DIRETO NO CORPO
+		
+		let nomeIdade = new Map<string , number>().set('Heliton',37).set('Gugu',36)
+		console.log(nomeIdade)  // resulta chave valor  =  Map {'Heliton' => 37 , 'Gugu' => 36'}
+		
+	
+	2)DECLARAR DIRETO NO CORPO COM ARRAY 
+		let nomeIdade = new Map<string , number>([
+		['Heliton',37],
+		['Gugu',36]
+			]);
+		console.log(nomeIdade)  // resulta chave valor  =  Map {'Heliton' => 37 , 'Gugu' => 36'}
+		
+	3)BUSCANDO TODAS AS CHAVES
+	
+		for(let key of nomeIdade.keys()){
+			console.log(key);    //result =  Heliton 
+								//           Gugu
+		}
+		
+	buscando o valor
+	
+		for(let valor of nomeIdade.values()){
+			console.log(valor);    //result =  37 
+								   //          36
+		}
+		
+	busca como array 
+	
+		for(let entry of nomeIdade.entries()){
+			console.log(entry);    //result =  ['Heliton',37]
+								   //          ['Gugu',36]
+		}
+		
+	`` =  retira o colchete e devolve somente o nome	
+		for(let entry of nomeIdade){ //funciona como o entry
+			console.log(`${entry[0]}`);    //result =  Heliton  
+		}
+		
+	4)PEGAR A CHAVE 	
+		console.log(nomeIdade.get("Heliton")) //resultado = 37 
+		
+	5)SABER SE EXISTE A CHAVE
+		console.log(nomeIdade.has(key:"Heliton")) // resultado = true 
+		
+	6)DELETAR A CHAVE 
+		console.log(nomeIdade.delete(key:"Heliton")) //true
+	
+	7) limpar tudo 
+	  nomeIdade.clear 
+	
+	8)Quantos elementos tem dentro do Mat
+	nome.size 
+	  
+----------------------
+//split (divide a string em partes)
+
+	const nome = 'HELITON SILVA VIEIRA'
+	1)ex separa
+	const parte =  nome.split(' ')
+	console.log(parte) // retorna um vetor   ['HELITON', 'SILVA', 'VIEIRA']
+	
+	2)ex implementar
+	const parte =  nome.split(' ').join('-')
+	console.log(parte) // retorna   'HELITON-SILVA-VIEIRA'
+	
+	3)ex pegar parte ou excluir 
+	const parte =  nome.split(' ').filter(p => p!= 'SILVA') 
+	console.log(parte) // retorna um vetor   ['HELITON', 'VIEIRA']
+	
+	4)ex separar as vogais 
+	const parte =  nome.split('')
+	console.log(parte) // retorna um vetor   ['H','E','L','I','T','O','N',' ','S','I','L','V','A',' ','V','I','E','I','R','A']
+	
+	5) ex excluir as vogais 
+	const parte =  nome.split('')
+	const vogais = 'aeiou'.split('') // separando as vogais em array 
+	const parte =  nome
+						.split('') //separando em vogais 
+						.filter( letra => vogais.indexOf(letra)< 0) //se letra for vogal nao vai para 
+						.join('') // juntar as letras que foram separadas em array
+	console.log(parte) 
+	
+	
+		
+		
+-------------------------------------------
+type Inference (reconhece sem informar o tipo evitar redundancia)
+funciona igual o javaScript
+-------------------------------------------
+	let msg = 'oi mundo!'	
+	
+	
+-------------------------------------------
+union (quando for mais de um tipo a variavel)
+id : number | string 
+undefined pode ser usado em alguns casos como ? 
+email? : string  (mesmo que) email : string | undefined
+-------------------------------------------
+
+	function pessoa(id : number | string , nome : string){
+		console.log(`Pessoa de codigo ${id} e nome ${nome}.`)
+	}
+	
+	pessoa(1 , 'gugu') ou  pessoa('1' , 'gugu') 
+	
+-------------------------------------------
+Type Alias(criar um tipo e ser aproveitado em varios lugares)
+type Id = number | string  (falado que Id é um tipo number e string)
+-------------------------------------------	
+ex1 (id do tipo id)
+
+	type Id = number | string
+	function pessoa(id : Id , nome : string){
+		console.log(`Pessoa de codigo ${id} e nome ${nome}.`)
+	}
+	
+	pessoa(1 , 'gugu') ou  pessoa('1' , 'gugu') 
+	
+	
+ex2 (tipo do tipo fixo e nao pode ser de outro tipo)
+	
+	type Plat = 'windows' | 'Linux' | 'Mac Os' | 
+	
+	funcition qualPlataforma(plataforma : Plat){
+		return plataforma
+	}
+	
+	qualPlataforma('ios') //vai dar erro pois ios nao pertence a Plat
+	qualPlataforma('Linux')
+		
+	
+------------------------------------------------
+type opcional
+------------------------------------------------
+undefined pode ser usado em alguns casos como ? 
+email? : string  (mesmo que) email : string | undefined	
+
+
+type  InfomaConta = {
+    id : number ;
+    nome : string;
+    email? : string  // opcao pode ser ou nao vazio
+}
+
+const infCont : InfomaConta = {
+    id : 1,
+    nome : "heliton"	
+}
+
+------------------------------------------------
+type Interceção & juntar dois tipos 
+------------------------------------------------
+
+type  InfomaConta = {
+    id : number ;
+    nome : string;
+    email? : string
+}
+
+const infCont : InfomaConta = {
+    id : 1,
+    nome : "heliton",
+    email : "eli@gmail.com"
+}
+
+type  Personagem = {
+    nickname : string ;
+    level : number; 
+}
+
+const personagem : Personagem = {   
+    nickname : "gugu",
+     level : 12
+}
+
+//intersecktion unir InfomaConta e  Personagem
+type PlayerInfo = InfomaConta & Personagem
+
+const player : PlayerInfo = {
+     id : 1,
+    nome : "heliton",
+    email : "eli@gmail.com",
+    nickname : "gugu",
+    level : 12
+} 
+
+------------------------------------------------
+classes 
+------------------------------------------------
+
+class Usuario {
+    nom:string
+    idade :number
+
+    constructor(nom:string,idade : number){
+        this.nom = nom
+        this.idade = idade
+    }
+//criando metodo dentro da classe
+    exibirUser():void {
+        console.log(`nome ${this.nom} a idade ${this.idade}`)
+    }
+}
+
+const joao = new Usuario("joao", 20)
+console.log(joao)
+console.log(joao.idade)
+joao.exibirUser() //chamando o metodo
+
+------------------------------------------------
+extends  get e set 
+------------------------------------------------
+class Personagem1 extends Usuario {
+    apelido: string
+    nivel: number
+
+    constructor(nom: string, idade: number, apelido: string, nivel:number){
+        super(nom , idade)//pega propriedades da classe superior a cima
+        this.apelido = apelido
+        this.nivel = nivel
+    }
+	
+	 getNivel(){
+		return this.nivel
+	}
+	
+	set setNivel(nivel: number){
+		this.nivel = nivel
+	}
+}
+
+const maria = new Personagem1('maria',12,'ria',5)
+maria.exibirUser() //consegue acessar os metodos da super class
+console.log(maria.getNivel) // chamada do get
+maria.setNivel = 6  // chamada do set
+
+------------------------------------------------
+modifile (propriedades que nao pode ser alteradas depois da criação)
+private  
+readonly 
+protected
+
+------------------------------------------------
+class Personagem1 {
+  private  apelido: string // altera somente dentro da classe 
+  readonly  nivel: number // consegue fazer leitura fora da classe mais nao altera
+  protected email : string // acessa e altera na classe e classe inferior ou superior extendidas
+  
+-------------------------------------------
+abstract (valores seram fixos 
+		  Nao consegue instanciar os objetos da classe	
+          nao vai conseguir instaciar para fazer alteraçoes nos valoes(const maria = new Personagem1('maria',12,'ria',5)))
+		  ultilizado quando tem valores fixo que nao vai ser alterado
+---- 
+
+abstract class Usuario {
+}
+
+
+--------------------------------------------------------------------
+Interfaces(Conjunto de dados para descrever a estrutura de um objeto)
+--------------------------------------------------------------------
+interface Game{
+    title:string
+    description:string
+    genre:string
+    plataform?:string[]
+    getSimilars?:(title:string) => void // assimatura de um metodo
+}
+
+//criação do objeto
+const ruck: Game = {
+    title : "O incrivel Ruck",
+    description: "O melhor",
+    genre: "Action",
+    plataform:["PS3", "PS4"],
+    getSimilars:(title:String) => {
+        console.log(`Similar games do ${title}`)
+    },
+}
+//chamada do metodo
+ruck.getSimilars(ruck.title)
+
+
+// interface pode ser extendida msm jeito de class
+interface DLC extends Game {
+    originalGame : Game;
+    newContent: string[]
+}
+
+const homemAranha: DLC = {
+    title : "O super homem aranha",
+    description: "Em holliwd",
+    genre: "Action",
+    plataform:["PS3"],
+    originalGame : ruck,
+    newContent: ["3 horas de luta"],
+}
+
+//implementar class baseada em interface
+
+class CriandoGame implements Game {
+   /* significa que a classe tem que ter todos tipos obrigatorios descritos na interface
+    title:string
+    description:string
+    genre:string*/
+    title:string
+    description:string
+    genre:string
+}
+
+
+--------------------------------------------------------------------
+Type Alias X Interfaces 
+--------------------------------------------------------------------
+Mais importante é a consistencia de acordo que o projeto esta sendo feito
+
+Interface = Quando tiver usando (POO)
+			Quando tiver criando libs
+			
+Type Alias = Na maioria das vezes 
+			 Se extender prefira as interfaces
+			 
+			 
+
+// Type Alias  														 //Interface 
+                                                                                   
+type GameT = {                                                        interface GameT {       
+    title : string                                                    	title : string
+}                                                                     } 
+
+type DLCT = { 													      interface DLCT {
+    extra:string 														 extra: string
+}                                                                     }
+
+//intersection   													 //intersection / extend
+
+type GameCollectionT = Game & DLCT                                   interface GameCollectionT extends Game, DLCT{}
+
+//implements                                                         //implements 
+
+class CreateGameT implements GameCollectionT{}                        class CreateGameT implements GameCollectionT{}
+
+//declarar função                                                    //declarar função  
+
+type getSimilarsT = (title: string) => void;                         interface getSimilarsT {
+																		(title: string): void;
+                                                                     }
+
+
+
+//***********************diferenças******************* */         //***********************diferenças******************* */
+
+                                                                     interface ID extends number{}
+// permite declarar tipos primitivos
+                                                                  // não consigo definir Tulplas no interface
+type IDT = string | number                                         interface Tuple {
+                                                                       0: number;
+// pode declarar tuplas normalmente                                    1: number
+                                                                   }
+type tupleT = [number,number]                                                
+                                                                    [1,2,3,4 ] as Tuple
+// erro [1,2,3] as tupleT                                          
+[1,2] as tupleT                                                   //pode ter multiplas declaraçõeos e mesmo nome
+                                   
+// Apenas uma declaração por escopo                               interface JQuery{
+//erro se tentar colocar mais um                                  	a: string
+                                                                  }
+type JQueryT = {a: string}
+//erro type JQueryT = {b: string}                                  interface JQuery{
+                                                                  	  b: string
+                                                                  }
+                                                                  
+                                                                  const varias: JQuery = {
+                                                                      a: "query a",
+                                                                      b: "query b"
+                                                                  }
+			 
+
+
+
+
+/*********************************************************** 
+generics (flexibilidade dentro de uma linguagem tipada)
+*************************************************************** */
+// S => State  (estado)
+// T => Type
+// K => Key
+// V => Value
+// E => Element
+
+
+// generic <S> =>
+// extends number | string 
+// = string  (o ultimo diz que o default é String)
+function useState<S extends number | string = string>() {
+    let state: S
+
+    function getState() {
+        return state
+    }
+    function setState(newState: S) {
+        state = newState
+    }
+
+    return { getState, setState }
+}
+
+const newState = useState();//useState<unknown> igual Any aceita tudo
+
+newState.setState("foo")
+console.log(newState.getState)
+
+
+/*********************************************************** 
+type-utilities (alterar parte do objeto mesmo que esteja sem ?)
+    
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>){ // jfunção para nao alterar direto
+    return {...todo,...fieldsToUpdate}
+}
+*************************************************************** */
+
+type Todo = {
+    title :string
+    description :string
+    completed : boolean
+}
+
+const todo :Readonly<Todo> = {
+    title :'American Pier',
+    description :'relembrar os detalhes',
+    completed : false,
+}
+
+console.log(todo)
+
+//todo.completed = true //altera direto mais nao é uma boa pratica 
+
+console.log(todo)
+
+//Partial<Todo>   deixa opcional para alterar somente um campo
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>){ // jfunção para nao alterar direto
+    return {...todo,...fieldsToUpdate}
+}
+
+const todo2 : Todo = updateTodo(todo,{completed:true})
+
+console.log(todo2)
+
+
+/*********************************************************** 
+pick (pegar somente os campos do pick )
+*************************************************************** */
+
+type todoPreview = Pick<Todo , "title" | "completed">
+
+const todo3 : todoPreview = {
+    title:"Lagoa azul",
+    completed : false
+}
+
+/*********************************************************** 
+Omit (não pegar o campo do omit )
+*************************************************************** */
+
+type todoPreview2 = Omit<Todo , "description" >
+
+const todo4 : todoPreview2 = {
+    title:"Lagoa azul",
+    completed : false
+}
+
+
+
+
+
+/*********************************************************** 
+decorators (declaração anexado num parametro class ou metodo)
+para funcionar tem que estar habilitado no ts.config
+começa com @
+*************************************************************** */
+// @Component
+// @Selector
+// @useState("dasdas")
+
+
+function log(target) {
+    console.log(target)  // resulta [function : Foo1]
+}
+
+@Log
+class Foo1 {}
+
+//----------------------------------------------------------------------------
+//factory (passando parametro )
+function Logger(prefix: string) {
+    return (target) => {
+        console.log(`${prefix} - ${target}`) // returne =  awesome - function Foo(){}
+    }
+}
+
+@Logger("awesome")
+class Foo {}
+//----------------------------------------------------------------------------
+
+
+
+//------------------------------------
+// Class decorator
+// (criado o decorator na class chama a função do decorator 
+// roda toda vez que a class é criada 
+// retorna criação do costrutor com a versao na chamada  da classe new API)
+//------------------------------------
+function setAPIVersion(apiVersion:string){
+    return (constructor) => {
+        return class extends constructor{ 
+            version = apiVersion           
+        }
+    }
+}
+
+@setAPIVersion("1.0.0")//atribuir a versao 
+class API{}
+
+console.log(new API) //resutado class_1 { version: ''1.0.0}
+
+
+//------------------------------------
+// Property decorator (passando decoretor em cima da propriedade)
+//(validaçao se menor que 5 letra returne erro)
+//------------------------------------
+function minLength(length: number){
+    return(target: any, key:string | symbol) => { // decorator em propriedade recebe 2 propriedade (target e key) 
+        console.log(target) //retorna = movie {}
+        console.log(key)//retorna =  title
+        let val = target[key]
+
+        const getter = () => val 
+
+        const setter = (value: string) => {
+            if(value.length < length){
+                console.log(`Vc nao pode criar uma ${key} menor que a ${length}.`)                
+            }else {
+                val = value
+            }
+        }
+
+        Object.defineProperty(target,key, {
+           get : getter,
+           set : setter  
+        })
+       
+    }
+}
+class Movie {
+    @minLength(5)
+    title : string
+
+    constructor(t : string){
+        this.title = t  
+    }
+}
+
+const movie = new Movie("Interstelar")
+console.log(movie.title)
+
+
+//------------------------------------
+// Method decorator (passado em cima do metodo)
+// roda toda vez que o metodo é chamado 
+//(mais ultilizados)
+//------------------------------------
+
+function delay(ms: number){
+    return(target : any , key :string, descriptor: PropertyDescriptor) => {//recebe 3 propriedades 
+    console.log(target); // retorna = Greeter { greet: [function]}
+    console.log(key); //  retorna = greet  
+    console.log(descriptor);/* retorna = {
+                                           value: [function],
+                                           writable: true ,
+                                           enumerable: true ,
+                                           configurable: true
+                                         }*/
+
+        const originalMethod = descriptor.value
+        
+        descriptor.value = function (...args){
+            console.log(`Esperando ${ms}...`)
+           
+            setTimeout(() => {
+                originalMethod.apply(this,args)
+            }, ms);
+          
+           return descriptor
+        }
+    }   
+}
+
+class Greeter {
+    greeting : string
+
+    constructor(g: string){
+        this.greeting = g
+    }
+    @delay(3000) // chamada do decorator no metodo e espera 3segundo para rodar mensagem
+    greet(){
+        console.log(`Hello! ${this.greeting}`)
+    }
+}
+
+const pessoinha = new Greeter("Pessoinha!")
+pessoinha.greet()
+
+// Parameter decorator
+    
+// Acessor decorator
+
+
+
+
+##############################################################################################
+jQuery() 
+##############################################################################################
+*bibliotecas JavaScript mais populares 
+*código aberto e disponibilizada sobre as licenças MIT e GPL. 
+	Desse modo, é uma biblioteca que podemos utilizar para fins comerciais e pessoais, 
+	sem termos que pagar qualquer tipo de licença de uso.
+
+*foco a simplicidade e o objetivo de facilitar nossa vida no desenvolvimento de aplicações 
+	que necessitariam de linhas e mais linhas de código para obtermis um determinado efeito, 
+        ou efetuar uma requisição Ajax.
+
+
+UTILIDADE DO JQUERY
+
+Podemos utilizar a jQuery para:
+
+	*Adicionarmos efeitos visuais e animações;
+	*Acessarmos e manipularmos o DOM;
+	*Carregarmos componentes Ajax;
+	*Provermos interatividade;
+	*Fazer alteração de conteúdo;
+	*Simplificarmos tarefas JavaScript.
+
+
+site oficial https://jquery.com/
+documentaçao https://api.jquery.com/
+
+
+Instalação 
+          
+          cdn referenciar https://code.jquery.com/ 
+          escolhe opção reduzida (ela é completa e mais leve)  
+          copia e cola no <head> do html   		  
+          criar o arquivo jquery.js
+
+
+FAZENDO REFERENCIA ARQUIVO JQUERY.
+
+	<html>
+	<head>
+	<title>...</title>
+	<!-- Versão development jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	</head>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--instalação referenciando o jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div><h1> Lista de nomes</h1></div>
+
+    <div>
+        <ul style="font-size: 35px;">
+            <li id="li1">João</li>
+            <li>Maria</li>
+            <li id="li3">Marcos</li>
+            <li>Bianca</li>
+            <li id="li5">Pedro</li>
+        </ul>
+    </div>
+
+    <div>
+        <button id="btn">sumir</button>
+        <button id="btn1">cor red</button>
+        <button id="btn2">cor azul</button>
+    </div>
+
+<script>
+     //trabalhando com jquery $('h1') 
+     // usar o id #  ('#h1')
+
+     $('h1').fadeOut("200000") // sumir da tela 
+     $('h1').fadeIn("200000000") // aparecer da tela 
+     $('h1').fadeOut("200000").fadeIn("200000000")// sumir depois aparecer
+
+     //$('li').remove() // remover toda lista   
+     $('h1').append(" de pessoas") // acrescenta informação a tag
+
+     $('#li1').remove() // remover usando o id#
+
+     $('#btn').on("click", botao)// chamada do metodo click pelo jquery
+
+     function botao(){
+        $('#li3').remove()
+     }  
+
+     $('#btn1').on("click", mudaCor)// chamada do metodo click pelo jquery
+
+     function mudaCor(){
+        $('li').css({'color':'red'})
+     }  
+
+     $('#btn2').on("click", mudaCor1)// chamada do metodo click pelo jquery
+
+     function mudaCor1(){
+        $('li').css({'color':'blue'})
+     }  
+</script>
+</body>
+</html> 
+
+##############################################################################################
+Ajax  (usa o jQuery)
+##############################################################################################
+
+Define dados e o metodo que vai ser enviado para o servidor GET, POST
+Pega os dados de fato e envia para o servidor 
+Pega a resposta do servidor 
+
+ $.ajax({  
+            method:'post',   //tipo de envio get ou post
+            url:'/setor',   // onde vai ser chamado no backend 
+	   
+	   data: { // dados que vai ser passado para servidor 
+		nome: 'Heliton',
+		idade: 39,
+		endereco: 'Bento Gonçalves 851
+	    } , 
+	    success: function(resposta){
+		console.log(resposta)
+	    }
+	    
+	})		//OUTRA FORMA DE PASSAR O DATA 
+			************************************************************
+			Fora do $.ajax cria a variavel e atribui os valores 
+			
+				var dados = new FormData()
+				dados.append('nome','Heliton');   //chave valor
+				dados.append('idade', 39);
+				dados.append('endereco', 'Bento Gonçalves 851);
+			
+					
+			Dentro do $.ajax(Deve add o processData, contentType)
+			
+				data: dados, processData: false,contentType: false 
+	                ************************************************************
+	    
+	                //OUTRA FORMA DE PASSAR O SUCCESS FORA DO AJAX com o .done
+			************************************************************
+	                
+			$.ajax({  
+                            method:'post',  
+                            url:'/setor', 
+	                   
+	                    data: { 
+	                	nome: 'Heliton',
+	                	idade: 39,
+	                	endereco: 'Bento Gonçalves 851
+	                    } 	    
+	                   }).done(function(resposta){
+				console.log(resposta)
+			   }
+           
+                        ************************************************************
+    
+    $.ajax({  
+            type:'get',   
+            url:'/setor', 
+            success:function(result){        
+              let row = result[0];
+              $('#idtb_setor').empty().append('<option selected="selected">Selecione...</option>');
+              $.each(row, function(key, value) {          
+                  $("#idtb_setor").append(`<option value="${value.idtb_setor}">${value.nom_setor}</option>`);
+              });
+            },
+            error: function (request, status, error) {
+              alert(error);
+            }
+          });
+      },
+      error: function (request, status, error) {
+        alert(error);
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+

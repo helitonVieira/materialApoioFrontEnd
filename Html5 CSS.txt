@@ -1,0 +1,373 @@
+##############################################################################################	
+VISUAL CODE 
+##############################################################################################
+Extensões para instalar 
+	Live Server = btnDireito "Open with live server"   para atualizar a pagina automatico quando salvar  
+	Auto Rename Tag = fechar as tags automatico
+	Dracula Official = tela ficar preta 
+	
+	
+************************************************
+ATALHOS
+
+IDENTAR O CODIGO = SHIFT + ALT + F 
+Como buscar arquivos =  Ctrl + P 
+
+************************************************	
+COMENTARIOS 
+************************************************
+html          <!--comentario em html-->
+css          /*comentario em css*/
+************************************************
+
+##############################################################################################
+  HTML
+##############################################################################################
+site de pesquisa https://tutorialehtml.com/pt/html-tutorial-campo-de-senha/
+
+
+<!DOCTYPE html>
+<!--indicar ao browser qual versão da linguagem usada-->
+<html lang="pt-BR">
+<!---->
+
+<head>
+    <!--O conteúdo nesse espaço não é visível no browser, 
+          mas contém instruções sobre seu conteúdo e comportamento. 
+          Dentro dessa tag, por exemplo, podem ser inseridas folhas de estilo e scripts;
+    -->
+    <meta charset="UTF-8">
+    <!--UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais utilizado em páginas web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---->
+    <title>Title a escolher</title>
+    <!--aparece na janela/aba do navegador-->
+</head>
+
+<body>
+    todo estudo html basico foi retirado desta pagina <br>
+    <a href="https://www.devmedia.com.br/html-basico-codigos-html/16596"> Material html estudo</a>
+
+    <!-- <div id="header"  style="background-color: red;"> </div> ANTES ERA ASSIM-->
+    <header style="background: red;"> header </header>
+    <nav style="background: yellow;"> nave   </nav>
+
+    <section style="background: turquoise;"> section </section>
+    <aside style="background: yellowgreen;"> aside   </aside>
+    <footer style="background: wheat;"> footer   </footer>
+
+    <h1 id='cabeca'>Título de nível 1</h1>
+    <h2>Título de nível 2</h2>
+    <h3>Título de nível 3</h3>
+    <h4>Título de nível 4</h4>
+    <h5>Título de nível 5</h5>
+    <h6>Título de nível 6</h6>
+
+    <p>Primeiro parágrafo do texto.</p>
+    <p>Segundo parágrafo do texto.</p>
+    <p>Terceiro parágrafo do texto.</p>
+
+    <br><br><br>
+
+    <p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
+    <p>Texto em itálico com <i>italics<i> e <em>emphasis</em>.</p>
+    <p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+    <p>Texto <ins>inserido</ins> e <del>excluído</del>.</p>
+    <p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
+
+    <p>Aprendendo DIV</p>
+    <input type="text" value="input 1">
+    <input type="text" value="input 2">
+    <div><input type="text" value="input 3"></div>
+    <div><input type="text" value="input 4"></div>
+
+    <p>Aprendendo SPAN </p>
+    <p>Este é um texto com um <span>
+            trecho em destaque</span>.</p>
+    <p>
+        Este é um texto com um <span style="background: #1abc9c; border-radius:5px; padding:5px">
+            trecho em destaque</span>.
+    </p>
+
+    <br><br>
+
+    <img src="avatar.png" alt="Texto alternativo caso imagem nao apareca" title="Titulo aparece no tooltip" />
+    <img src="arquivo_inexistente.jpg" alt="Texto alternativo caso imagem nao apareca" title="Outra figura" />
+
+    <figure>
+        <img src="avatar.png" alt="Imagem">
+
+        <figcaption>Legenda da figura 1</figcaption>
+    </figure>
+
+    <a href="#cabeca">direciona para uma parte do texto pelo id h1</a> <br> <br>
+    <!--outros elementos-->
+    <a href="https://www.google.com"> direcionar para uma pagina google</a> <br><br>
+
+
+    <table>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
+        </tr>
+    </table>
+
+    <br> <br> <br>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feijão</td>
+                <td>R$ 8,75</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>R$ 4,99</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>R$ 18,73</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br> <br> <br>
+
+    <ol>
+        <li>lista 1</li>
+        <li>lista 2</li>
+        <li>lista 3</li>
+    </ol>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="I">
+        <!--1 - números (padrão)
+        i - números romanos minúsculos
+        I - números romanos maiúsculos
+        a - letras minúsculas
+        A - letras maiúsculas -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="A">
+        <!--1 - números (padrão)
+        i - números romanos minúsculos
+        I - números romanos maiúsculos
+        a - letras minúsculas
+        A - letras maiúsculas -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+	###############################################################
+	trabalhando com formulario
+	###############################################################
+	
+	<fieldset> <!--criar a borda-->
+	  <form id="idFormulario">
+            <input id="masc" type="radio" name="sexo" onclick="setParametrosInicial();">Masculino
+            <input id="femin" type="radio" name="sexo" onclick="setParametrosInicial();">Feminino           
+          </form>
+	</fieldset>
+	
+	<input id=""type="text" placeholder="Digite aqui" size="20" maxlength="30">
+		<!--placeholder = vai aparecer no fundo do text box
+	            size= quantidade de caracter que vai aparecer na tela
+		    maxlength = quantidade que vai poder digitar -->
+
+        <button type="submit" form="idFormulario"></button>
+    <form action="salvar_dados.php" method="post">
+       nome: <input type="text" placeholder="Digite aqui"> <br/>
+       
+       <input type="checkbox" checke>Checkbox <br/> <!-- checked para iniciar marcado -->
+       
+       <input type="radio" name="sexo" >masculino 
+       <input type="radio" name="sexo" checked>feminino<br/> <!-- checked para iniciar marcado -->
+       
+       range: <input type="range"> <br/>
+       
+       Numero min 5 max 10: <input type="number" step="1" min="5" max="10"><br> <!--step valor que começa min e max-->
+       
+       obrigatorio antes do envio: <input type="text" required="required"/><br><!--required deixa o campo obrigatorio-->
+       
+       voz: <input type="text" x-webkit-speech/><br><!--reconhecimento de voz-->       
+       
+       Aniversário: <input type="date" name="" id="" max="2020-11-20" value="2020-05-20">  <br>  
+        
+       <input type="submit" value="Enviar"> <!--submit e para enviar todo o formulario-->
+    </form>
+
+<br><br><br>
+
+<progress>carregando</progress> 
+<br><br>
+<progress value="75" max="100">...carregando...</progress>
+    <br><br><br>
+
+
+    <!-- tipo pode ser (MP3, OGG ou WAV).
+    controles (botões play, pause etc.)
+    autoplay, para fazer com que o áudio seja executado assim que for carregado
+    loop, para que o áudio seja executado repetidas vezes.
+    -->
+    <audio controls src="musicaLiveBololo.mp3" width="144" autostart="false" loop="false" volume="60">
+        Seu browser não suporta áudio.
+    </audio>
+    <br><br><br>
+
+
+    <audio controls src="musica.mp3">
+        <source src="musicaLiveBololo.mp3">
+        <source src="musica.mp3" type="audio/mp3">
+        <!--<source src="musica.ogg" type="audio/ogg">
+        <source src="musica.mp3" type="audio/mpeg">-->
+    </audio>
+    <br><br><br>
+
+    <audio controls>
+        <source src="musica.mp3" type="audio/mpeg">
+        <source src="musicaLiveBololo.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio tag.
+    </audio>
+    <br><br><br>
+    <video src="video.mp4" width="200" height="200" controls>
+        Seu browser não suporta vídeo HTML5.
+    </video>
+    <br><br><br>
+
+    <video width="300" height="300" controls  poster = "avatar.png"><!--poster imagem antes de começar o video-->
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <br><br>
+
+</body>
+
+</html>
+
+##############################################################################################
+CSS 
+##############################################################################################
+
+css          /*comentario em css*/
+
+#id
+.class
+
+/* declaração é feita dentro do head */
+<head>
+	<link rel="stylesheet" href="caminho.css"
+</head>
+
+
+:root{/*root é global definição para todo projeto*/
+/*variaveis quando vai usar varias vezes no codigo*/
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+chamar variavel   background: var(--preta);
+
+*{ /*definição para inicializar sem espações*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/*não deixar que passe estore o tamanho*/
+}
+
+
+.header{  /*declaração para classe com ponto na frente*/
+	padding:10px;
+	}
+	
+#header{  /*declaração para id com ponto na frente# o id só pode ser usado uma vez na pagina/
+	padding:10px;
+	}
+alterar cor grupo de elementos
+	
+	#title, .subltitle, .post_title{
+		color:blue;
+	}
+	
+atributos 
+	color: blue; /*mudança de cor*/
+	font-size: 16px; /*tamanho da fonte*/
+	font-style: italic; /*negrito,italico*/
+	background: write; /*cor de fundo*/
+		background-color: green;
+		background-image: url("bg.png");
+		background-position: top;
+	
+	border: 3px solid red; (tamanho estilo cor)(width style color) estilo(solid dotted dashed)
+	ou	border-top: 3px solid red;
+		border-right: 3px solid red;
+		border-bottom: 3px solid red;
+		border-left: 3px solid red;
+		  ainda pode separar tudo junto
+			border-width: 3px;
+			border-color: blue;
+			border-style: solid;
+	           lado separado
+			border-top-width: 3px;
+			border-top-color: blue;
+			border-top-style: solid;
+		
+		
+	padding:15px 10px 5px 0; /*margem ou espaçamento dentro do proprio componente*/
+	ou	padding-top: 15px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		padding-left: 0;
+	
+Box model (margin(inicio),
+	   border(entre inicio e padding),
+	   padding(espaço para chegar no conteudo),
+	   content(text imag video))
+	
+	margin:10px; espaçamento entre elementos 
+	border:3px solid black; (largura estilo cor )cicunda entre o padding e conteudo largura cor
+		solid: mostra uma borda simples e reta;
+		dotted: são bolinhas com um pequeno espaçamento entre elas;
+		dashed: forma uma linha tracejada.
+	
+	padding:10px 10px 10px 0; (superior inferior esquerda direita)espaçamento entre borda e conteudo
+	Outra forma de informar o padding
+		padding-top: 15px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		padding-left: 0;
+		
+	content: texto imag videu
+		
+	Quando inspeciona elemento consegue visualizar todo o box model criado por tags.	
+		
+	FLEX BOX ESTUDAR	
+	
+	
